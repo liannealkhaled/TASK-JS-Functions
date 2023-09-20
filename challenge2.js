@@ -6,10 +6,16 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
-function greet(name) {
-  console.log(name);
-}
-greet(`hamza`);
+
+
+function greet (name) { console.log( `HELLO ${name}`)}
+
+greet(`hamza`)
+
+// function greet(name) {
+//   console.log(name);
+// }
+// greet(`hamza`);
 
 /**
  * isOdd(n):
@@ -20,14 +26,26 @@ greet(`hamza`);
  * isOdd(7) -> true
  * isOdd(10) -> false
  */
-function isOdd(n) {
-  if (n % 2 == 1) {
-    return true;
-  } else {
-    return false;
-  }
+
+
+function isOdd(x) { 
+  if ((x-1)%2 == 0 ){ return true}
+  else {return false}
 }
-console.log(isOdd(7));
+
+console.log (isOdd(7))
+
+console.log (isOdd(10))
+
+
+// function isOdd(n) {
+//   if (n % 2 == 1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isOdd(7));
 
 /**
  * oddsSmallerThan(n):
@@ -38,13 +56,23 @@ console.log(isOdd(7));
  * oddsSmallerThan(7) -> 3
  * oddsSmallerThan(15) -> 7
  */
-function oddsSmallerThan(n) {
-  if (isOdd(n)) {
-    console.log((n - 1) / 2);
-  }
-}
+ 
+function oddsSmallerThan(x) {
+  if ( isOdd(x)){ 
+  console.log ( (x-1)/2)}
+ }
+oddsSmallerThan(7)
+oddsSmallerThan(8) // false 
 
-oddsSmallerThan(7);
+
+
+// function oddsSmallerThan(n) {
+//   if (isOdd(n)) {
+//     console.log((n - 1) / 2);
+//   }
+// }
+
+// oddsSmallerThan(7);
 
 /**
  * squareOrDouble(n):
@@ -56,11 +84,21 @@ oddsSmallerThan(7);
  * squareOrDouble(16) -> 32
  * squareOrDouble(9) -> 81
  */
-function squareOrDouble(n) {
-  if (isOdd(n)) {
-    console.log(n * n);
-  } else {
-    console.log(n * 2);
-  }
+
+function squareOrDouble(x) { 
+  if (x%2 == 1) { return x*x} else {return x*2}
 }
-squareOrDouble(7);
+ console.log (squareOrDouble(2))
+ console.log (squareOrDouble(3))
+
+
+
+
+// function squareOrDouble(n) {
+//   if (isOdd(n)) {
+//     console.log(n * n);
+//   } else {
+//     console.log(n * 2);
+//   }
+// }
+// squareOrDouble(7);
